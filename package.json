@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "npx tailwindcss -i ./_gen/style_init.css -o ./src/_includes/css/global.css",
+    "build:css": "npx tailwindcss -i ./_gen/style_init.css -o ./src/_includes/css/global.css --watch",
     "start": "npx eleventy --serve --port=8081"
   },
   "keywords": [],

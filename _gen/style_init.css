@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.grid-col-2-sidebar {
+    grid-template-columns: max-content 1fr;
+}

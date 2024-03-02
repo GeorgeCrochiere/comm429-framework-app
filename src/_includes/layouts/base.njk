@@ -7,6 +7,12 @@
     {% endblock %}
 </head>
 <body>
-    {{content | safe}}
+    {% block baseHead %}
+
+    {% endblock %}
+
+    {% block baseFooter %}
+
+    {% endblock %}
 </body>
 </html>

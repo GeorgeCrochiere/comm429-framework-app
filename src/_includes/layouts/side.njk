@@ -1,0 +1,18 @@
+{% extends "layouts/base.njk" %}
+
+{% block heading %}
+    
+{% endblock %}
+
+{% block baseHead %}
+    <div class="grid h-screen grid-flow-col grid-rows-1 grid-col-2-sidebar">
+        {% NavbarSide %}
+        <div class="p-5 w-max">
+            {{ content | safe }}
+        </div>
+    </div>
+{% endblock %}
+
+{% block baseFooter %}
+    
+{% endblock %}
