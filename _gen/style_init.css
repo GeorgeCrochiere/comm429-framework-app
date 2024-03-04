@@ -7,3 +7,11 @@
 .grid-col-2-sidebar {
     grid-template-columns: max-content 1fr;
 }
+
+.grid-rows-2-sidebar {
+    grid-template-rows: 1fr max-content;
+}
+
+.h-sideBarMin {
+    min-height: 800px;
+}

@@ -4,15 +4,15 @@
     
 {% endblock %}
 
-{% block baseHead %}
-    <div class="grid h-screen grid-flow-col grid-rows-1 grid-col-2-sidebar">
+{% block contentBase %}
+    <div class="grid h-screen grid-flow-row grid-rows-1 grid-col-2-sidebar h-sideBarMin">
         {% NavbarSide %}
-        <div class="p-5 w-max">
-            {{ content | safe }}
+        <div class="flex flex-col justify-between min-h-full">
+            <div class="p-5">
+                {{ content | safe }}
+            </div>
+            {% Footer sideBool=false %}
         </div>
     </div>
-{% endblock %}
-
-{% block baseFooter %}
-    
+    <script src="/src/js/dropdown_sel.js"></script>
 {% endblock %}

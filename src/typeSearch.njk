@@ -1,0 +1,8 @@
+---
+layout: layouts/side.njk
+title: Search All Pokemon
+description: Search page to sort out which pokemon you are looking to find.
+---
+
+<h1 class="text-lg text-white">Select the type specification of your search!</h1>
+{% DropDown name="Types", list=allTypes.results, param="typeSel" %}

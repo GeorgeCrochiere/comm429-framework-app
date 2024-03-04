@@ -1,7 +1,13 @@
 ---
 layout: layouts/home.njk
 title: Home
-description: Home
+description: Home Page
 ---
 
-<h1 class="text-lg text-white">{{title}}</h1>
+<h1 class="text-lg text-white">Select the parameters of your search!</h1>
+<h1>{{ numPokemon.results.length }}</h1>
+<h1>{{ allGens.results.length }}</h1>
+<h1>{{ allTypes.results.length }}</h1>
+<h1>{{ allGens.results[1].name }}</h1>
+<h1>{{ allTypes | dump }}</h1>
+
