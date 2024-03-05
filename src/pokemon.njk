@@ -6,7 +6,11 @@ pagination:
     data: numPokemon.results
     size: 1
     alias: id
+permalink: "pokemon/{{id.name | slugify}}/"
 ---
 
-<h1>{{id.name}}</h1>
-<script></script>
+<h6 class="hidden" id="imgURL">{{id.url}}</h6>
+<div>
+    {% CardItem url=id.url %}
+</div>
+<script text="text/javascript" src="/src/js/pokemon_get.js" defer></script>

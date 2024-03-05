@@ -2,6 +2,7 @@ const NavbarTop = require("./src/_includes/components/NavbarTop.js");
 const NavbarSide = require("./src/_includes/components/NavbarSide.js");
 const Footer = require("./src/_includes/components/Footer.js");
 const DropDown = require("./src/_includes/components/DropDown.js");
+const CardItem = require("./src/_includes/components/CardItem.js");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "./src/_includes/assets/": "./src/assets" });
@@ -15,6 +16,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode("NavbarSide", NavbarSide);
     eleventyConfig.addShortcode("Footer", Footer);
     eleventyConfig.addShortcode("DropDown", DropDown);
+    eleventyConfig.addShortcode("CardItem", CardItem);
 
     return {
         dir: {

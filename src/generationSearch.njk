@@ -4,8 +4,5 @@ title: Search All Pokemon
 description: Search page to sort out which pokemon you are looking to find.
 ---
 
-<h1 class="text-lg text-white">Select the parameters of your search!</h1>
-<div class="flex flex-grow">
-    {% DropDown name="Generations", list=allGens.results, param="genSel" %}
-    {% DropDown name="Types", list=allTypes.results, param="typeSel" %}
-</div>
+<h1 class="text-lg text-white">Select the generation of your search!</h1>
+{% DropDown name="Generations", list=allGens.results, param="genSel" %}
